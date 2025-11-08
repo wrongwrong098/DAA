@@ -7,7 +7,7 @@ class Node:
         self.left = self.right = None 
     
     def __lt__(self,other):
-        return self.freq < self.freq
+        return self.freq < other.freq
     
 def print_codes(node,code=''):
     if node:
@@ -38,4 +38,5 @@ def huffman(chars,freqs):
 
 chars = ['A','B','C','D','E']
 freqs = [5,9,12,13,16]
+
 huffman(chars,freqs)
